@@ -82,7 +82,7 @@ public class AppTest {
         String logTrade1 ="t3:The latest trade is Trader:t3 buy $5.00 Stock: GOOG\n";
         String logTrade2 ="t2:The latest trade is Trader:t3 buy $5.00 Stock: GOOG";
 
-        boolean condicion = (logTrade1+logTrade2).equals(sm.trade(t3,s4, "sell",5.00));
+        boolean condicion = (logTrade1+logTrade2).equals(sm.trade(t3,s4, "buy",5.00));
 
         assertTrue(condicion);
     }
